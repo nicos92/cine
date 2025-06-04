@@ -1,0 +1,13 @@
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\bin\Debug\Guia7.exe.config
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\bin\Debug\Guia7.exe
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\bin\Debug\Guia7.pdb
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.csprojResolveAssemblyReference.cache
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.CardPelicula.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormPrincipal.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormAsientos.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormMetodoPago.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.Properties.Resources.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.csproj.GenerateResource.Cache
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.exe
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.pdb
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormCompra.resources
