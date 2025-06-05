@@ -34,8 +34,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Progres = new System.Windows.Forms.ProgressBar();
             this.PanelLeft = new System.Windows.Forms.Panel();
+            this.ImgPeli = new System.Windows.Forms.PictureBox();
             this.PanelBottom = new System.Windows.Forms.Panel();
             this.TLPBtns = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnAtras = new System.Windows.Forms.Button();
+            this.BtnSiguiente = new System.Windows.Forms.Button();
             this.PanelMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.LblDesc = new System.Windows.Forms.Label();
@@ -50,17 +53,14 @@
             this.LblSala = new System.Windows.Forms.Label();
             this.LblPeli = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.ImgPeli = new System.Windows.Forms.PictureBox();
-            this.BtnAtras = new System.Windows.Forms.Button();
-            this.BtnSiguiente = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.PanelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).BeginInit();
             this.PanelBottom.SuspendLayout();
             this.TLPBtns.SuspendLayout();
             this.PanelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -116,6 +116,16 @@
             this.PanelLeft.Size = new System.Drawing.Size(300, 272);
             this.PanelLeft.TabIndex = 7;
             // 
+            // ImgPeli
+            // 
+            this.ImgPeli.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImgPeli.Location = new System.Drawing.Point(0, 0);
+            this.ImgPeli.Name = "ImgPeli";
+            this.ImgPeli.Size = new System.Drawing.Size(300, 272);
+            this.ImgPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgPeli.TabIndex = 0;
+            this.ImgPeli.TabStop = false;
+            // 
             // PanelBottom
             // 
             this.PanelBottom.Controls.Add(this.TLPBtns);
@@ -141,6 +151,53 @@
             this.TLPBtns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPBtns.Size = new System.Drawing.Size(784, 101);
             this.TLPBtns.TabIndex = 0;
+            // 
+            // BtnAtras
+            // 
+            this.BtnAtras.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(229)))), ((int)(((byte)(245)))));
+            this.BtnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.BtnAtras.FlatAppearance.BorderSize = 2;
+            this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAtras.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.BtnAtras.Image = global::Guia7.Properties.Resources.angle_left_purple;
+            this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAtras.Location = new System.Drawing.Point(65, 26);
+            this.BtnAtras.Name = "BtnAtras";
+            this.BtnAtras.Size = new System.Drawing.Size(128, 48);
+            this.BtnAtras.TabIndex = 8;
+            this.BtnAtras.Tag = "seleccionado";
+            this.BtnAtras.Text = "Atrás";
+            this.BtnAtras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAtras.UseVisualStyleBackColor = false;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
+            // BtnSiguiente
+            // 
+            this.BtnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.BtnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnSiguiente.FlatAppearance.BorderSize = 2;
+            this.BtnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(154)))));
+            this.BtnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(210)))));
+            this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnSiguiente.Image = global::Guia7.Properties.Resources.angle_right_red;
+            this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSiguiente.Location = new System.Drawing.Point(591, 26);
+            this.BtnSiguiente.Name = "BtnSiguiente";
+            this.BtnSiguiente.Size = new System.Drawing.Size(128, 48);
+            this.BtnSiguiente.TabIndex = 6;
+            this.BtnSiguiente.Tag = "seleccionado";
+            this.BtnSiguiente.Text = "COMPRAR";
+            this.BtnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BtnSiguiente.UseVisualStyleBackColor = false;
+            this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
             // PanelMain
             // 
@@ -313,63 +370,6 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // ImgPeli
-            // 
-            this.ImgPeli.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgPeli.Location = new System.Drawing.Point(0, 0);
-            this.ImgPeli.Name = "ImgPeli";
-            this.ImgPeli.Size = new System.Drawing.Size(300, 272);
-            this.ImgPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgPeli.TabIndex = 0;
-            this.ImgPeli.TabStop = false;
-            // 
-            // BtnAtras
-            // 
-            this.BtnAtras.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(229)))), ((int)(((byte)(245)))));
-            this.BtnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAtras.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.BtnAtras.FlatAppearance.BorderSize = 2;
-            this.BtnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAtras.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.BtnAtras.Image = global::Guia7.Properties.Resources.angle_left_purple;
-            this.BtnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAtras.Location = new System.Drawing.Point(65, 26);
-            this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(128, 48);
-            this.BtnAtras.TabIndex = 8;
-            this.BtnAtras.Tag = "seleccionado";
-            this.BtnAtras.Text = "Atrás";
-            this.BtnAtras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAtras.UseVisualStyleBackColor = false;
-            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
-            // 
-            // BtnSiguiente
-            // 
-            this.BtnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
-            this.BtnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnSiguiente.FlatAppearance.BorderSize = 2;
-            this.BtnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(154)))));
-            this.BtnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(210)))));
-            this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnSiguiente.Image = global::Guia7.Properties.Resources.angle_right_red;
-            this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSiguiente.Location = new System.Drawing.Point(591, 26);
-            this.BtnSiguiente.Name = "BtnSiguiente";
-            this.BtnSiguiente.Size = new System.Drawing.Size(128, 48);
-            this.BtnSiguiente.TabIndex = 6;
-            this.BtnSiguiente.Tag = "seleccionado";
-            this.BtnSiguiente.Text = "COMPRAR";
-            this.BtnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BtnSiguiente.UseVisualStyleBackColor = false;
-            this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
-            // 
             // FormCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -387,19 +387,19 @@
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCompra";
+            this.Text = "Compra";
             this.Activated += new System.EventHandler(this.FormCompra_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCompra_FormClosed);
             this.Load += new System.EventHandler(this.FormCompra_Load);
             this.PanelTop.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.PanelLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).EndInit();
             this.PanelBottom.ResumeLayout(false);
             this.TLPBtns.ResumeLayout(false);
             this.PanelMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).EndInit();
             this.ResumeLayout(false);
 
         }

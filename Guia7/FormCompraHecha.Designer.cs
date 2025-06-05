@@ -30,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCompraHecha));
             this.PanelMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.LblDesc = new System.Windows.Forms.Label();
@@ -44,22 +45,22 @@
             this.LblSala = new System.Windows.Forms.Label();
             this.LblPeli = new System.Windows.Forms.Label();
             this.PanelLeft = new System.Windows.Forms.Panel();
+            this.ImgPeli = new System.Windows.Forms.PictureBox();
             this.PanelBottom = new System.Windows.Forms.Panel();
             this.TLPBtns = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Progres = new System.Windows.Forms.ProgressBar();
             this.PanelTop = new System.Windows.Forms.Panel();
             this.TituloModulo = new System.Windows.Forms.Label();
-            this.ImgPeli = new System.Windows.Forms.PictureBox();
-            this.BtnCerrar = new System.Windows.Forms.Button();
             this.PanelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.PanelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).BeginInit();
             this.PanelBottom.SuspendLayout();
             this.TLPBtns.SuspendLayout();
             this.panel1.SuspendLayout();
             this.PanelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMain
@@ -235,6 +236,16 @@
             this.PanelLeft.Size = new System.Drawing.Size(300, 311);
             this.PanelLeft.TabIndex = 11;
             // 
+            // ImgPeli
+            // 
+            this.ImgPeli.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImgPeli.Location = new System.Drawing.Point(0, 0);
+            this.ImgPeli.Name = "ImgPeli";
+            this.ImgPeli.Size = new System.Drawing.Size(300, 311);
+            this.ImgPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgPeli.TabIndex = 0;
+            this.ImgPeli.TabStop = false;
+            // 
             // PanelBottom
             // 
             this.PanelBottom.Controls.Add(this.TLPBtns);
@@ -257,6 +268,32 @@
             this.TLPBtns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPBtns.Size = new System.Drawing.Size(800, 101);
             this.TLPBtns.TabIndex = 0;
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.TLPBtns.SetColumnSpan(this.BtnCerrar, 2);
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnCerrar.FlatAppearance.BorderSize = 2;
+            this.BtnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(154)))));
+            this.BtnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(210)))));
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnCerrar.Image = global::Guia7.Properties.Resources.xmarkred;
+            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCerrar.Location = new System.Drawing.Point(336, 26);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(128, 48);
+            this.BtnCerrar.TabIndex = 9;
+            this.BtnCerrar.Tag = "seleccionado";
+            this.BtnCerrar.Text = "CERRRAR";
+            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BtnCerrar.UseVisualStyleBackColor = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // panel1
             // 
@@ -302,42 +339,6 @@
             this.TituloModulo.Text = "FELICITACIONES POR TU COMPRA";
             this.TituloModulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ImgPeli
-            // 
-            this.ImgPeli.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgPeli.Location = new System.Drawing.Point(0, 0);
-            this.ImgPeli.Name = "ImgPeli";
-            this.ImgPeli.Size = new System.Drawing.Size(300, 311);
-            this.ImgPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgPeli.TabIndex = 0;
-            this.ImgPeli.TabStop = false;
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
-            this.TLPBtns.SetColumnSpan(this.BtnCerrar, 2);
-            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnCerrar.FlatAppearance.BorderSize = 2;
-            this.BtnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(154)))));
-            this.BtnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(210)))));
-            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnCerrar.Image = global::Guia7.Properties.Resources.xmarkred;
-            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.Location = new System.Drawing.Point(336, 26);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(128, 48);
-            this.BtnCerrar.TabIndex = 9;
-            this.BtnCerrar.Tag = "seleccionado";
-            this.BtnCerrar.Text = "CERRRAR";
-            this.BtnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BtnCerrar.UseVisualStyleBackColor = false;
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
             // FormCompraHecha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,21 +349,22 @@
             this.Controls.Add(this.PanelBottom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormCompraHecha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCompraHecha";
+            this.Text = "Compra";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCompraHecha_FormClosed);
             this.Load += new System.EventHandler(this.FormCompraHecha_Load);
             this.PanelMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.PanelLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).EndInit();
             this.PanelBottom.ResumeLayout(false);
             this.TLPBtns.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.PanelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImgPeli)).EndInit();
             this.ResumeLayout(false);
 
         }

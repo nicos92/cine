@@ -33,6 +33,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TituloModulo = new System.Windows.Forms.Label();
             this.Foto = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.LblHora = new System.Windows.Forms.Label();
+            this.LblFecha = new System.Windows.Forms.Label();
+            this.LblSala = new System.Windows.Forms.Label();
             this.PanelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,20 +50,16 @@
             this.BtnSiguiente = new System.Windows.Forms.Button();
             this.LblAsientos = new System.Windows.Forms.Label();
             this.LblCant = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblSala = new System.Windows.Forms.Label();
-            this.LblFecha = new System.Windows.Forms.Label();
-            this.LblHora = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.PanelMain.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.PanelBottom.SuspendLayout();
             this.TLPBtns.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -119,6 +119,49 @@
             this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Foto.TabIndex = 1;
             this.Foto.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.LblHora, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.LblFecha, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.LblSala, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(580, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(193, 61);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // LblHora
+            // 
+            this.LblHora.AutoSize = true;
+            this.LblHora.Location = new System.Drawing.Point(3, 40);
+            this.LblHora.Name = "LblHora";
+            this.LblHora.Size = new System.Drawing.Size(38, 16);
+            this.LblHora.TabIndex = 2;
+            this.LblHora.Text = "Hora";
+            // 
+            // LblFecha
+            // 
+            this.LblFecha.AutoSize = true;
+            this.LblFecha.Location = new System.Drawing.Point(3, 20);
+            this.LblFecha.Name = "LblFecha";
+            this.LblFecha.Size = new System.Drawing.Size(48, 16);
+            this.LblFecha.TabIndex = 1;
+            this.LblFecha.Text = "Fecha";
+            // 
+            // LblSala
+            // 
+            this.LblSala.AutoSize = true;
+            this.LblSala.Location = new System.Drawing.Point(3, 0);
+            this.LblSala.Name = "LblSala";
+            this.LblSala.Size = new System.Drawing.Size(36, 16);
+            this.LblSala.TabIndex = 0;
+            this.LblSala.Text = "Sala";
             // 
             // PanelMain
             // 
@@ -300,49 +343,6 @@
             this.LblCant.TabIndex = 0;
             this.LblCant.Text = "Cantidad de Asientos elegidos:";
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.LblHora, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.LblFecha, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.LblSala, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(580, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(193, 61);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // LblSala
-            // 
-            this.LblSala.AutoSize = true;
-            this.LblSala.Location = new System.Drawing.Point(3, 0);
-            this.LblSala.Name = "LblSala";
-            this.LblSala.Size = new System.Drawing.Size(36, 16);
-            this.LblSala.TabIndex = 0;
-            this.LblSala.Text = "Sala";
-            // 
-            // LblFecha
-            // 
-            this.LblFecha.AutoSize = true;
-            this.LblFecha.Location = new System.Drawing.Point(3, 20);
-            this.LblFecha.Name = "LblFecha";
-            this.LblFecha.Size = new System.Drawing.Size(48, 16);
-            this.LblFecha.TabIndex = 1;
-            this.LblFecha.Text = "Fecha";
-            // 
-            // LblHora
-            // 
-            this.LblHora.AutoSize = true;
-            this.LblHora.Location = new System.Drawing.Point(3, 40);
-            this.LblHora.Name = "LblHora";
-            this.LblHora.Size = new System.Drawing.Size(38, 16);
-            this.LblHora.TabIndex = 2;
-            this.LblHora.Text = "Hora";
-            // 
             // FormAsientos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -364,6 +364,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.PanelMain.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -371,8 +373,6 @@
             this.PanelBottom.ResumeLayout(false);
             this.TLPBtns.ResumeLayout(false);
             this.TLPBtns.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
