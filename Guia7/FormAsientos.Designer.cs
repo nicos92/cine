@@ -32,7 +32,6 @@
             this.PanelTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TituloModulo = new System.Windows.Forms.Label();
-            this.Foto = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.LblHora = new System.Windows.Forms.Label();
             this.LblFecha = new System.Windows.Forms.Label();
@@ -46,13 +45,12 @@
             this.LblPantalla = new System.Windows.Forms.Label();
             this.PanelBottom = new System.Windows.Forms.Panel();
             this.TLPBtns = new System.Windows.Forms.TableLayoutPanel();
+            this.LblAsientos = new System.Windows.Forms.Label();
+            this.Foto = new System.Windows.Forms.PictureBox();
             this.BtnAtras = new System.Windows.Forms.Button();
             this.BtnSiguiente = new System.Windows.Forms.Button();
-            this.LblAsientos = new System.Windows.Forms.Label();
-            this.LblCant = new System.Windows.Forms.Label();
             this.PanelTop.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.PanelMain.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,6 +58,7 @@
             this.panel1.SuspendLayout();
             this.PanelBottom.SuspendLayout();
             this.TLPBtns.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTop
@@ -107,18 +106,6 @@
             this.TituloModulo.TabIndex = 0;
             this.TituloModulo.Text = "ELIJE TUS ASIENTOS";
             this.TituloModulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Foto
-            // 
-            this.Foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.Foto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Foto.Location = new System.Drawing.Point(509, 0);
-            this.Foto.Margin = new System.Windows.Forms.Padding(0);
-            this.Foto.Name = "Foto";
-            this.Foto.Size = new System.Drawing.Size(68, 67);
-            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Foto.TabIndex = 1;
-            this.Foto.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -255,15 +242,13 @@
             // 
             // TLPBtns
             // 
-            this.TLPBtns.ColumnCount = 4;
+            this.TLPBtns.ColumnCount = 3;
             this.TLPBtns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TLPBtns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
-            this.TLPBtns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.37245F));
+            this.TLPBtns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TLPBtns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.TLPBtns.Controls.Add(this.BtnAtras, 0, 0);
-            this.TLPBtns.Controls.Add(this.BtnSiguiente, 3, 0);
-            this.TLPBtns.Controls.Add(this.LblAsientos, 2, 0);
-            this.TLPBtns.Controls.Add(this.LblCant, 1, 0);
+            this.TLPBtns.Controls.Add(this.BtnSiguiente, 2, 0);
+            this.TLPBtns.Controls.Add(this.LblAsientos, 1, 0);
             this.TLPBtns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TLPBtns.Location = new System.Drawing.Point(0, 0);
             this.TLPBtns.Name = "TLPBtns";
@@ -271,6 +256,29 @@
             this.TLPBtns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPBtns.Size = new System.Drawing.Size(784, 101);
             this.TLPBtns.TabIndex = 0;
+            // 
+            // LblAsientos
+            // 
+            this.LblAsientos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblAsientos.AutoSize = true;
+            this.LblAsientos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAsientos.Location = new System.Drawing.Point(244, 38);
+            this.LblAsientos.Name = "LblAsientos";
+            this.LblAsientos.Size = new System.Drawing.Size(296, 25);
+            this.LblAsientos.TabIndex = 7;
+            this.LblAsientos.Text = "Cantidad de asientos elegidos: 0";
+            // 
+            // Foto
+            // 
+            this.Foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Foto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Foto.Location = new System.Drawing.Point(509, 0);
+            this.Foto.Margin = new System.Windows.Forms.Padding(0);
+            this.Foto.Name = "Foto";
+            this.Foto.Size = new System.Drawing.Size(68, 67);
+            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Foto.TabIndex = 1;
+            this.Foto.TabStop = false;
             // 
             // BtnAtras
             // 
@@ -309,7 +317,7 @@
             this.BtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.BtnSiguiente.Image = global::Guia7.Properties.Resources.angle_right_red;
             this.BtnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSiguiente.Location = new System.Drawing.Point(590, 26);
+            this.BtnSiguiente.Location = new System.Drawing.Point(591, 26);
             this.BtnSiguiente.Name = "BtnSiguiente";
             this.BtnSiguiente.Size = new System.Drawing.Size(128, 48);
             this.BtnSiguiente.TabIndex = 6;
@@ -321,28 +329,6 @@
             this.BtnSiguiente.EnabledChanged += new System.EventHandler(this.BtnSiguiente_EnabledChanged);
             this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
-            // LblAsientos
-            // 
-            this.LblAsientos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LblAsientos.AutoSize = true;
-            this.LblAsientos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAsientos.Location = new System.Drawing.Point(493, 38);
-            this.LblAsientos.Name = "LblAsientos";
-            this.LblAsientos.Size = new System.Drawing.Size(23, 25);
-            this.LblAsientos.TabIndex = 7;
-            this.LblAsientos.Text = "0";
-            // 
-            // LblCant
-            // 
-            this.LblCant.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.LblCant.AutoSize = true;
-            this.LblCant.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCant.Location = new System.Drawing.Point(243, 40);
-            this.LblCant.Name = "LblCant";
-            this.LblCant.Size = new System.Drawing.Size(244, 21);
-            this.LblCant.TabIndex = 0;
-            this.LblCant.Text = "Cantidad de Asientos elegidos:";
-            // 
             // FormAsientos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -353,6 +339,8 @@
             this.Controls.Add(this.PanelBottom);
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormAsientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -363,7 +351,6 @@
             this.PanelTop.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.PanelMain.ResumeLayout(false);
@@ -373,6 +360,7 @@
             this.PanelBottom.ResumeLayout(false);
             this.TLPBtns.ResumeLayout(false);
             this.TLPBtns.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,7 +373,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel PanelBottom;
         private System.Windows.Forms.TableLayoutPanel TLPBtns;
-        private System.Windows.Forms.Label LblCant;
         private System.Windows.Forms.Button BtnSiguiente;
         private System.Windows.Forms.PictureBox Foto;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

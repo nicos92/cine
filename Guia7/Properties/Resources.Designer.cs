@@ -313,6 +313,16 @@ namespace Guia7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mp {
+            get {
+                object obj = ResourceManager.GetObject("mp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NUEVOSVENGADORES {
             get {
                 object obj = ResourceManager.GetObject("NUEVOSVENGADORES", resourceCulture);

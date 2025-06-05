@@ -236,7 +236,7 @@ namespace Guia7
 
         private void CargarDatos()
         {
-            TituloModulo.Text = "ELIGE TUS ASIENTOS PARA VER\n" + Funcion.LaPelicula.Titulo;
+           
             Foto.Image = Funcion.LaPelicula.Imagen;
             LblSala.Text = "Sala: " + Funcion.Sala;
             LblFecha.Text = "Fecha: " + Funcion.Fecha;

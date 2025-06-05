@@ -215,8 +215,8 @@
             this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.88298F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.11702F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.04671F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.95329F));
             this.tableLayoutPanel1.Controls.Add(this.LblDesc, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.LblAsientos, 1, 5);
@@ -259,7 +259,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 240);
+            this.label4.Location = new System.Drawing.Point(24, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 17);
             this.label4.TabIndex = 6;
@@ -270,7 +270,7 @@
             this.LblAsientos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblAsientos.AutoSize = true;
             this.LblAsientos.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAsientos.Location = new System.Drawing.Point(91, 238);
+            this.LblAsientos.Location = new System.Drawing.Point(87, 238);
             this.LblAsientos.Name = "LblAsientos";
             this.LblAsientos.Size = new System.Drawing.Size(0, 21);
             this.LblAsientos.TabIndex = 10;
@@ -280,7 +280,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 194);
+            this.label1.Location = new System.Drawing.Point(40, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 17);
             this.label1.TabIndex = 3;
@@ -291,7 +291,7 @@
             this.LblNombreTarjeta.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.LblNombreTarjeta.AutoSize = true;
             this.LblNombreTarjeta.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombreTarjeta.Location = new System.Drawing.Point(39, 149);
+            this.LblNombreTarjeta.Location = new System.Drawing.Point(35, 149);
             this.LblNombreTarjeta.Name = "LblNombreTarjeta";
             this.LblNombreTarjeta.Size = new System.Drawing.Size(46, 17);
             this.LblNombreTarjeta.TabIndex = 2;
@@ -302,7 +302,7 @@
             this.LblNrmTarjeta.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.LblNrmTarjeta.AutoSize = true;
             this.LblNrmTarjeta.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNrmTarjeta.Location = new System.Drawing.Point(50, 104);
+            this.LblNrmTarjeta.Location = new System.Drawing.Point(46, 104);
             this.LblNrmTarjeta.Name = "LblNrmTarjeta";
             this.LblNrmTarjeta.Size = new System.Drawing.Size(35, 17);
             this.LblNrmTarjeta.TabIndex = 1;
@@ -313,7 +313,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 59);
+            this.label3.Location = new System.Drawing.Point(25, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 5;
@@ -324,7 +324,7 @@
             this.LblHora.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblHora.AutoSize = true;
             this.LblHora.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHora.Location = new System.Drawing.Point(91, 192);
+            this.LblHora.Location = new System.Drawing.Point(87, 192);
             this.LblHora.Name = "LblHora";
             this.LblHora.Size = new System.Drawing.Size(84, 21);
             this.LblHora.TabIndex = 9;
@@ -335,7 +335,7 @@
             this.LblFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblFecha.AutoSize = true;
             this.LblFecha.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(91, 147);
+            this.LblFecha.Location = new System.Drawing.Point(87, 147);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(84, 21);
             this.LblFecha.TabIndex = 8;
@@ -346,7 +346,7 @@
             this.LblSala.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblSala.AutoSize = true;
             this.LblSala.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSala.Location = new System.Drawing.Point(91, 102);
+            this.LblSala.Location = new System.Drawing.Point(87, 102);
             this.LblSala.Name = "LblSala";
             this.LblSala.Size = new System.Drawing.Size(84, 21);
             this.LblSala.TabIndex = 7;
@@ -357,7 +357,7 @@
             this.LblPeli.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblPeli.AutoSize = true;
             this.LblPeli.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPeli.Location = new System.Drawing.Point(91, 57);
+            this.LblPeli.Location = new System.Drawing.Point(87, 57);
             this.LblPeli.Name = "LblPeli";
             this.LblPeli.Size = new System.Drawing.Size(84, 21);
             this.LblPeli.TabIndex = 4;
@@ -384,6 +384,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

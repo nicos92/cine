@@ -71,7 +71,7 @@
             this.PanelMain.Location = new System.Drawing.Point(300, 88);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Padding = new System.Windows.Forms.Padding(4);
-            this.PanelMain.Size = new System.Drawing.Size(500, 311);
+            this.PanelMain.Size = new System.Drawing.Size(484, 272);
             this.PanelMain.TabIndex = 10;
             // 
             // tableLayoutPanel1
@@ -92,7 +92,7 @@
             this.tableLayoutPanel1.Controls.Add(this.LblFecha, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.LblSala, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.LblPeli, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 21);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 2);
             this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(552, 364);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(332, 272);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -233,7 +233,7 @@
             this.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelLeft.Location = new System.Drawing.Point(0, 88);
             this.PanelLeft.Name = "PanelLeft";
-            this.PanelLeft.Size = new System.Drawing.Size(300, 311);
+            this.PanelLeft.Size = new System.Drawing.Size(300, 272);
             this.PanelLeft.TabIndex = 11;
             // 
             // ImgPeli
@@ -241,7 +241,7 @@
             this.ImgPeli.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImgPeli.Location = new System.Drawing.Point(0, 0);
             this.ImgPeli.Name = "ImgPeli";
-            this.ImgPeli.Size = new System.Drawing.Size(300, 311);
+            this.ImgPeli.Size = new System.Drawing.Size(300, 272);
             this.ImgPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgPeli.TabIndex = 0;
             this.ImgPeli.TabStop = false;
@@ -250,9 +250,9 @@
             // 
             this.PanelBottom.Controls.Add(this.TLPBtns);
             this.PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelBottom.Location = new System.Drawing.Point(0, 399);
+            this.PanelBottom.Location = new System.Drawing.Point(0, 360);
             this.PanelBottom.Name = "PanelBottom";
-            this.PanelBottom.Size = new System.Drawing.Size(800, 101);
+            this.PanelBottom.Size = new System.Drawing.Size(784, 101);
             this.PanelBottom.TabIndex = 12;
             // 
             // TLPBtns
@@ -266,7 +266,7 @@
             this.TLPBtns.Name = "TLPBtns";
             this.TLPBtns.RowCount = 1;
             this.TLPBtns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPBtns.Size = new System.Drawing.Size(800, 101);
+            this.TLPBtns.Size = new System.Drawing.Size(784, 101);
             this.TLPBtns.TabIndex = 0;
             // 
             // BtnCerrar
@@ -284,7 +284,7 @@
             this.BtnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.BtnCerrar.Image = global::Guia7.Properties.Resources.xmarkred;
             this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCerrar.Location = new System.Drawing.Point(336, 26);
+            this.BtnCerrar.Location = new System.Drawing.Point(328, 26);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(128, 48);
             this.BtnCerrar.TabIndex = 9;
@@ -303,7 +303,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 24);
+            this.panel1.Size = new System.Drawing.Size(784, 24);
             this.panel1.TabIndex = 13;
             // 
             // Progres
@@ -311,7 +311,7 @@
             this.Progres.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Progres.Location = new System.Drawing.Point(0, 0);
             this.Progres.Name = "Progres";
-            this.Progres.Size = new System.Drawing.Size(800, 24);
+            this.Progres.Size = new System.Drawing.Size(784, 24);
             this.Progres.TabIndex = 0;
             this.Progres.Value = 59;
             this.Progres.Visible = false;
@@ -323,7 +323,7 @@
             this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTop.Location = new System.Drawing.Point(0, 0);
             this.PanelTop.Name = "PanelTop";
-            this.PanelTop.Size = new System.Drawing.Size(800, 64);
+            this.PanelTop.Size = new System.Drawing.Size(784, 64);
             this.PanelTop.TabIndex = 14;
             // 
             // TituloModulo
@@ -334,7 +334,7 @@
             this.TituloModulo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.TituloModulo.Location = new System.Drawing.Point(0, 0);
             this.TituloModulo.Name = "TituloModulo";
-            this.TituloModulo.Size = new System.Drawing.Size(800, 64);
+            this.TituloModulo.Size = new System.Drawing.Size(784, 64);
             this.TituloModulo.TabIndex = 0;
             this.TituloModulo.Text = "FELICITACIONES POR TU COMPRA";
             this.TituloModulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -343,13 +343,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.PanelLeft);
             this.Controls.Add(this.PanelBottom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormCompraHecha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

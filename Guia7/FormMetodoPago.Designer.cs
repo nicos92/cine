@@ -32,16 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMetodoPago));
             this.PanelMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.CheckCvv = new System.Windows.Forms.PictureBox();
-            this.CheckFecha = new System.Windows.Forms.PictureBox();
-            this.CheckNom = new System.Windows.Forms.PictureBox();
-            this.CheckTarj = new System.Windows.Forms.PictureBox();
             this.TxtFechaVencimiento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtNombreTitular = new System.Windows.Forms.TextBox();
             this.TxtNrotarjeta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.PBTarjetas = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LblNombreTarjeta = new System.Windows.Forms.Label();
@@ -51,35 +46,42 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.CheckDni = new System.Windows.Forms.PictureBox();
             this.PanelTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.LblHora = new System.Windows.Forms.Label();
             this.LblFecha = new System.Windows.Forms.Label();
             this.LblSala = new System.Windows.Forms.Label();
-            this.Foto = new System.Windows.Forms.PictureBox();
             this.TituloModulo = new System.Windows.Forms.Label();
             this.PanelBottom = new System.Windows.Forms.Panel();
             this.TLPBtns = new System.Windows.Forms.TableLayoutPanel();
+            this.ErrorForm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.CheckCvv = new System.Windows.Forms.PictureBox();
+            this.CheckFecha = new System.Windows.Forms.PictureBox();
+            this.CheckNom = new System.Windows.Forms.PictureBox();
+            this.CheckTarj = new System.Windows.Forms.PictureBox();
+            this.PBTarjetas = new System.Windows.Forms.PictureBox();
+            this.CheckDni = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Foto = new System.Windows.Forms.PictureBox();
             this.BtnAtras = new System.Windows.Forms.Button();
             this.BtnSiguiente = new System.Windows.Forms.Button();
-            this.ErrorForm = new System.Windows.Forms.ErrorProvider(this.components);
             this.PanelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.PanelTop.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.PanelBottom.SuspendLayout();
+            this.TLPBtns.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckCvv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckFecha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckNom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckTarj)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBTarjetas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckDni)).BeginInit();
-            this.PanelTop.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
-            this.PanelBottom.SuspendLayout();
-            this.TLPBtns.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorForm)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMain
@@ -98,10 +100,10 @@
             this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.87363F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.60989F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.94496F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.66055F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.39449F));
             this.tableLayoutPanel1.Controls.Add(this.CheckCvv, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.CheckFecha, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.CheckNom, 2, 3);
@@ -122,6 +124,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.CheckDni, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 16);
             this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(752, 364);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(752, 264);
@@ -135,50 +138,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(752, 264);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // CheckCvv
-            // 
-            this.CheckCvv.Image = global::Guia7.Properties.Resources.check;
-            this.CheckCvv.Location = new System.Drawing.Point(483, 221);
-            this.CheckCvv.Name = "CheckCvv";
-            this.CheckCvv.Size = new System.Drawing.Size(24, 36);
-            this.CheckCvv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CheckCvv.TabIndex = 19;
-            this.CheckCvv.TabStop = false;
-            this.CheckCvv.Visible = false;
-            // 
-            // CheckFecha
-            // 
-            this.CheckFecha.Image = global::Guia7.Properties.Resources.check;
-            this.CheckFecha.Location = new System.Drawing.Point(483, 179);
-            this.CheckFecha.Name = "CheckFecha";
-            this.CheckFecha.Size = new System.Drawing.Size(24, 36);
-            this.CheckFecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CheckFecha.TabIndex = 18;
-            this.CheckFecha.TabStop = false;
-            this.CheckFecha.Visible = false;
-            // 
-            // CheckNom
-            // 
-            this.CheckNom.Image = global::Guia7.Properties.Resources.check;
-            this.CheckNom.Location = new System.Drawing.Point(483, 137);
-            this.CheckNom.Name = "CheckNom";
-            this.CheckNom.Size = new System.Drawing.Size(24, 36);
-            this.CheckNom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CheckNom.TabIndex = 17;
-            this.CheckNom.TabStop = false;
-            this.CheckNom.Visible = false;
-            // 
-            // CheckTarj
-            // 
-            this.CheckTarj.Image = global::Guia7.Properties.Resources.check;
-            this.CheckTarj.Location = new System.Drawing.Point(483, 95);
-            this.CheckTarj.Name = "CheckTarj";
-            this.CheckTarj.Size = new System.Drawing.Size(24, 36);
-            this.CheckTarj.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CheckTarj.TabIndex = 16;
-            this.CheckTarj.TabStop = false;
-            this.CheckTarj.Visible = false;
             // 
             // TxtFechaVencimiento
             // 
@@ -236,18 +195,6 @@
             this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "DNI:";
-            // 
-            // PBTarjetas
-            // 
-            this.PBTarjetas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.PBTarjetas, 4);
-            this.PBTarjetas.Image = global::Guia7.Properties.Resources._4;
-            this.PBTarjetas.Location = new System.Drawing.Point(236, 3);
-            this.PBTarjetas.Name = "PBTarjetas";
-            this.PBTarjetas.Size = new System.Drawing.Size(280, 44);
-            this.PBTarjetas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBTarjetas.TabIndex = 0;
-            this.PBTarjetas.TabStop = false;
             // 
             // label2
             // 
@@ -348,17 +295,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Ej: 03-30 (mes-año)";
             // 
-            // CheckDni
-            // 
-            this.CheckDni.Image = global::Guia7.Properties.Resources.check;
-            this.CheckDni.Location = new System.Drawing.Point(483, 53);
-            this.CheckDni.Name = "CheckDni";
-            this.CheckDni.Size = new System.Drawing.Size(24, 36);
-            this.CheckDni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CheckDni.TabIndex = 15;
-            this.CheckDni.TabStop = false;
-            this.CheckDni.Visible = false;
-            // 
             // PanelTop
             // 
             this.PanelTop.BackColor = System.Drawing.Color.LightGray;
@@ -431,18 +367,6 @@
             this.LblSala.TabIndex = 0;
             this.LblSala.Text = "Sala";
             // 
-            // Foto
-            // 
-            this.Foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.Foto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Foto.Location = new System.Drawing.Point(574, 0);
-            this.Foto.Margin = new System.Windows.Forms.Padding(0);
-            this.Foto.Name = "Foto";
-            this.Foto.Size = new System.Drawing.Size(56, 64);
-            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Foto.TabIndex = 2;
-            this.Foto.TabStop = false;
-            // 
             // TituloModulo
             // 
             this.TituloModulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -481,6 +405,103 @@
             this.TLPBtns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPBtns.Size = new System.Drawing.Size(784, 101);
             this.TLPBtns.TabIndex = 0;
+            // 
+            // ErrorForm
+            // 
+            this.ErrorForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ErrorForm.ContainerControl = this;
+            this.ErrorForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorForm.Icon")));
+            // 
+            // CheckCvv
+            // 
+            this.CheckCvv.Image = global::Guia7.Properties.Resources.check;
+            this.CheckCvv.Location = new System.Drawing.Point(483, 221);
+            this.CheckCvv.Name = "CheckCvv";
+            this.CheckCvv.Size = new System.Drawing.Size(24, 36);
+            this.CheckCvv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckCvv.TabIndex = 19;
+            this.CheckCvv.TabStop = false;
+            this.CheckCvv.Visible = false;
+            // 
+            // CheckFecha
+            // 
+            this.CheckFecha.Image = global::Guia7.Properties.Resources.check;
+            this.CheckFecha.Location = new System.Drawing.Point(483, 179);
+            this.CheckFecha.Name = "CheckFecha";
+            this.CheckFecha.Size = new System.Drawing.Size(24, 36);
+            this.CheckFecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckFecha.TabIndex = 18;
+            this.CheckFecha.TabStop = false;
+            this.CheckFecha.Visible = false;
+            // 
+            // CheckNom
+            // 
+            this.CheckNom.Image = global::Guia7.Properties.Resources.check;
+            this.CheckNom.Location = new System.Drawing.Point(483, 137);
+            this.CheckNom.Name = "CheckNom";
+            this.CheckNom.Size = new System.Drawing.Size(24, 36);
+            this.CheckNom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckNom.TabIndex = 17;
+            this.CheckNom.TabStop = false;
+            this.CheckNom.Visible = false;
+            // 
+            // CheckTarj
+            // 
+            this.CheckTarj.Image = global::Guia7.Properties.Resources.check;
+            this.CheckTarj.Location = new System.Drawing.Point(483, 95);
+            this.CheckTarj.Name = "CheckTarj";
+            this.CheckTarj.Size = new System.Drawing.Size(24, 36);
+            this.CheckTarj.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckTarj.TabIndex = 16;
+            this.CheckTarj.TabStop = false;
+            this.CheckTarj.Visible = false;
+            // 
+            // PBTarjetas
+            // 
+            this.PBTarjetas.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.tableLayoutPanel1.SetColumnSpan(this.PBTarjetas, 2);
+            this.PBTarjetas.Image = global::Guia7.Properties.Resources._4;
+            this.PBTarjetas.Location = new System.Drawing.Point(202, 3);
+            this.PBTarjetas.Name = "PBTarjetas";
+            this.PBTarjetas.Size = new System.Drawing.Size(275, 44);
+            this.PBTarjetas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBTarjetas.TabIndex = 0;
+            this.PBTarjetas.TabStop = false;
+            // 
+            // CheckDni
+            // 
+            this.CheckDni.Image = global::Guia7.Properties.Resources.check;
+            this.CheckDni.Location = new System.Drawing.Point(483, 53);
+            this.CheckDni.Name = "CheckDni";
+            this.CheckDni.Size = new System.Drawing.Size(24, 36);
+            this.CheckDni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckDni.TabIndex = 15;
+            this.CheckDni.TabStop = false;
+            this.CheckDni.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
+            this.pictureBox1.Image = global::Guia7.Properties.Resources.mp;
+            this.pictureBox1.Location = new System.Drawing.Point(483, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Foto
+            // 
+            this.Foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Foto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Foto.Location = new System.Drawing.Point(574, 0);
+            this.Foto.Margin = new System.Windows.Forms.Padding(0);
+            this.Foto.Name = "Foto";
+            this.Foto.Size = new System.Drawing.Size(56, 64);
+            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Foto.TabIndex = 2;
+            this.Foto.TabStop = false;
             // 
             // BtnAtras
             // 
@@ -531,12 +552,6 @@
             this.BtnSiguiente.EnabledChanged += new System.EventHandler(this.BtnSiguiente_EnabledChanged);
             this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
-            // ErrorForm
-            // 
-            this.ErrorForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
-            this.ErrorForm.ContainerControl = this;
-            this.ErrorForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorForm.Icon")));
-            // 
             // FormMetodoPago
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -548,6 +563,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormMetodoPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -557,20 +574,21 @@
             this.PanelMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.PanelTop.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.PanelBottom.ResumeLayout(false);
+            this.TLPBtns.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckCvv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckFecha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckNom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckTarj)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBTarjetas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckDni)).EndInit();
-            this.PanelTop.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
-            this.PanelBottom.ResumeLayout(false);
-            this.TLPBtns.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorForm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -612,5 +630,6 @@
         private System.Windows.Forms.PictureBox CheckNom;
         private System.Windows.Forms.PictureBox CheckTarj;
         private System.Windows.Forms.PictureBox CheckDni;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

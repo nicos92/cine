@@ -154,14 +154,17 @@
   <data name="MISERICORDIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MISERICORDIA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="xmarkred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmarkred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PITUFOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PITUFOS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MINECRAFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MINECRAFT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DANDADAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DANDADAN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VIERNESDELOCOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VIERNESDELOCOS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KARATEKID" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KARATEKID.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,11 +181,11 @@
   <data name="NUEVOSVENGADORES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NUEVOSVENGADORES.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VIERNESDELOCOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VIERNESDELOCOS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SELOQUEHICIERON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SELOQUEHICIERON.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DANDADAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DANDADAN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DONDEESTAELPOLICIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DONDEESTAELPOLICIA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +217,7 @@
   <data name="MAZELTOV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MAZELTOV.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xmarkred" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xmarkred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -92,7 +92,7 @@ namespace Guia7
 
 
             }
-            LblAsientos.Text = _asientos.ToString();
+            LblAsientos.Text = "Cantidad de asientos elegidos: " + _asientos;
 
             ActivarSiguiente();
         }
