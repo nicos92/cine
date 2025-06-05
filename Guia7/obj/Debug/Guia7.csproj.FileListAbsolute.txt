@@ -11,3 +11,4 @@ C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7
 C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.exe
 C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.pdb
 C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormCompra.resources
+C:\Users\nicos92\Mi unidad\ISFT_N_93\2do B\seminario\Guia7\Guia7\obj\Debug\Guia7.FormCompraHecha.resources

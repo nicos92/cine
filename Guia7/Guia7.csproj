@@ -70,6 +70,12 @@
     <Compile Include="FormCompra.Designer.cs">
       <DependentUpon>FormCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCompraHecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompraHecha.Designer.cs">
+      <DependentUpon>FormCompraHecha.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMetodoPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCompra.resx">
       <DependentUpon>FormCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompraHecha.resx">
+      <DependentUpon>FormCompraHecha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMetodoPago.resx">
       <DependentUpon>FormMetodoPago.cs</DependentUpon>
@@ -216,6 +225,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmarkred.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

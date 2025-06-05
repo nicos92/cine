@@ -15,6 +15,6 @@ namespace Guia7
 
         public List<string> asientos = new List<string>();
 
-       
+       public string codigoCompra { get; set; }
     }
 }

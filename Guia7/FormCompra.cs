@@ -16,14 +16,18 @@ namespace Guia7
         private FormMetodoPago _formMetodoPago;
         private FormAsientos _formAsientos;
         private FormPrincipal _formPrincipal;
+        private FormCompraHecha _formCompraHecha;
+
         public FuncionPeli FuncionPeli { get; set; }
-        public FormCompra(FormMetodoPago formMetodoPago, FormAsientos formAsientos, FormPrincipal formPrincipal )
+        public FormCompra(FormMetodoPago formMetodoPago, FormAsientos formAsientos, FormPrincipal formPrincipal)
         {
             InitializeComponent();
             _formMetodoPago = formMetodoPago;
             _formAsientos = formAsientos;
             _formPrincipal = formPrincipal;
         }
+
+
 
         private void FormCompra_Load(object sender, EventArgs e)
         {
@@ -34,8 +38,8 @@ namespace Guia7
         private void CargarDatos()
         {
             int entradas = FuncionPeli.asientos.Count();
-            LblDesc.Text = "ESTAS A PUNTO DE COMPRAR " +( entradas > 1 ?  entradas + " ENTRADAS" : entradas + " ENTRADA");
-            LblPeli.Text= FuncionPeli.LaPelicula.Titulo;
+            LblDesc.Text = "ESTAS A PUNTO DE COMPRAR " + (entradas > 1 ? entradas + " ENTRADAS" : entradas + " ENTRADA");
+            LblPeli.Text = FuncionPeli.LaPelicula.Titulo;
             LblSala.Text = FuncionPeli.Sala;
             LblFecha.Text = FuncionPeli.Fecha;
             LblHora.Text = FuncionPeli.Horario;
@@ -60,13 +64,13 @@ namespace Guia7
 
         private void FormCompra_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if ( !_formMetodoPago.IsDisposed)
+            if (!_formMetodoPago.IsDisposed)
             {
 
-            _formMetodoPago.WindowState = this.WindowState;
-            _formMetodoPago.BringToFront();
+                _formMetodoPago.WindowState = this.WindowState;
+                _formMetodoPago.BringToFront();
 
-            _formMetodoPago.Show();
+                _formMetodoPago.Show();
             }
         }
 
@@ -83,6 +87,8 @@ namespace Guia7
             BtnAtras.Enabled = false;
             BtnSiguiente.Enabled = false;
             Progres.Visible = true;
+            Properties.Settings.Default.codigoCompra++;
+
             backgroundWorker1.RunWorkerAsync();
         }
 
@@ -99,22 +105,40 @@ namespace Guia7
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
 
-     
+
             Progres.Value = e.ProgressPercentage;
-        
-           
-            
+
+
+
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             Progres.Visible = false;
-            MessageBox.Show("Compra Exitosa", "COMPRA");
-            _formMetodoPago.Close();
-            _formAsientos.Close();
-            _formPrincipal.BringToFront();
-            _formPrincipal.Show();
-            this.Close();
+
+
+            CompraHecha();
+            Properties.Settings.Default.Save();
+
+        }
+
+        private void CompraHecha()
+        {
+            
+            if (_formCompraHecha == null || _formCompraHecha.IsDisposed)
+            {
+
+                _formCompraHecha = new FormCompraHecha(this, _formMetodoPago, _formAsientos);
+
+            }
+            else
+            {
+                _formCompraHecha.BringToFront();
+            }
+            
+            _formCompraHecha.Funcion = FuncionPeli;
+            _formCompraHecha.Show();
+            this.Hide();
 
         }
 
@@ -122,5 +146,6 @@ namespace Guia7
         {
             CargarDatos();
         }
+
     }
 }

@@ -124,8 +124,8 @@
   <data name="EXORCISMO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EXORCISMO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="angle-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\angle-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SOMETHING" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SOMETHING.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ELIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ELIO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +148,9 @@
   <data name="DESAPARICION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DESAPARICION.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="angle-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\angle-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MISERICORDIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MISERICORDIA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +160,8 @@
   <data name="MINECRAFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MINECRAFT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VIERNESDELOCOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VIERNESDELOCOS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DANDADAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DANDADAN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KARATEKID" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KARATEKID.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,20 +172,17 @@
   <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SOMETHING" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SOMETHING.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SUPERMAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SUPERMAN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NUEVOSVENGADORES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NUEVOSVENGADORES.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="VIERNESDELOCOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VIERNESDELOCOS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SELOQUEHICIERON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SELOQUEHICIERON.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DANDADAN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DANDADAN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DONDEESTAELPOLICIA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DONDEESTAELPOLICIA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,13 +205,16 @@
   <data name="BAILARINA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BAILARINA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="F1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\F1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MAZELTOV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MAZELTOV.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="xmarkred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmarkred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

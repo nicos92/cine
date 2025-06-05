@@ -74,18 +74,18 @@ namespace Guia7
         {
             bool bdni = Regex.IsMatch(TxtDNI.Text, @"^[0-9]{8}$");
             bool bntarj = Regex.IsMatch(TxtNrotarjeta.Text, @"^[0-9]{16}$");
-         
+
             bool bnom = Regex.IsMatch(TxtNombreTitular.Text.Trim(), @"^[a-zA-Z\s]{4,45}$");
             bool bfecha = Regex.IsMatch(TxtFechaVencimiento.Text, @"^(0[1-9]|1[0-2])-[0-9]{2}$");
             bool bcvv = Regex.IsMatch(TxtCVV.Text, @"^[0-9]{3}$");
-         
+
             if (bfecha)
             {
                 string[] fechas = TxtFechaVencimiento.Text.Split('-');
                 int anio = Convert.ToInt32(fechas[1]);
                 int mes = Convert.ToInt32(fechas[0]);
-                bfecha= ValidarFechaVenc(mes, anio);
-                
+                bfecha = ValidarFechaVenc(mes, anio);
+
 
             }
             ErrorDni(bdni, bntarj, bnom, bfecha, bcvv);
@@ -93,53 +93,93 @@ namespace Guia7
             Console.WriteLine($"{bdni} - {bntarj} - {bnom} - {bfecha} - {bcvv}");
         }
 
-       
 
-        
+
+
 
         private void ErrorDni(bool bdni, bool bntarj, bool bnom, bool bfecha, bool bcvv)
         {
-                ErrorForm.Clear();
+            ErrorForm.Clear();
             if (!bdni)
             {
-                ErrorForm.SetError(TxtDNI, "Dni Invalido");
-                CheckDni.Visible = false;
+                if (string.IsNullOrWhiteSpace(TxtDNI.Text))
+                {
+                    ErrorForm.SetError(TxtDNI, "El campo no puede estar vacio");
 
+                }
+                else
+                {
+
+                    ErrorForm.SetError(TxtDNI, "Dni Invalido, debe tener 8 digitos");
+                }
+                CheckDni.Visible = false;
             }
             else
             {
                 CheckDni.Visible = true;
             }
+
             if (!bntarj)
             {
-                ErrorForm.SetError(TxtNrotarjeta, "Número de tarjeta Invalido");
+                if (string.IsNullOrWhiteSpace(TxtNrotarjeta.Text))
+                {
+                    ErrorForm.SetError(TxtNrotarjeta, "El campo no puede estar vacio");
+
+                }
+                else
+                {
+
+                    ErrorForm.SetError(TxtNrotarjeta, "Número de tarjeta Invalido, debe tener 16 digitos");
+                }
                 CheckTarj.Visible = false;
             }
             else
             {
                 CheckTarj.Visible = true;
             }
+
             if (!bnom)
             {
-                ErrorForm.SetError(TxtNombreTitular, "Nombre de titular Invalido");
+                if (string.IsNullOrWhiteSpace(TxtNombreTitular.Text))
+                {
+                    ErrorForm.SetError(TxtNombreTitular, "El campo no puede estar vacio");
+
+                }
+                else
+                {
+
+                    ErrorForm.SetError(TxtNombreTitular, "Nombre de titular Invalido");
+                }
                 CheckNom.Visible = false;
             }
             else
             {
                 CheckNom.Visible = true;
             }
+
             if (!bfecha)
             {
                 ErrorForm.SetError(TxtFechaVencimiento, "Fecha de vencimiento Invalida");
                 CheckFecha.Visible = false;
             }
+
             else
             {
                 CheckFecha.Visible = true;
             }
+
             if (!bcvv)
             {
-                ErrorForm.SetError(TxtCVV, "CVV Invalido");
+                if (string.IsNullOrWhiteSpace(TxtCVV.Text))
+                {
+                    ErrorForm.SetError(TxtCVV, "El campo no puede estar vacio");
+
+                }
+                else
+                {
+
+                    ErrorForm.SetError(TxtCVV, "CVV Invalido, debe tener 3 digitos");
+                }
                 CheckCvv.Visible = false;
             }
             else
@@ -155,11 +195,20 @@ namespace Guia7
             string[] hoyS = hoy.Split('/');
             int _mes = Convert.ToInt32(hoyS[1]);
             int _anio = Convert.ToInt32(hoyS[2].Substring(2));
-            
-            if (anio >= _anio && mes >= _mes)
+
+            if (anio > _anio)
             {
-               return  true;
+                return true;
             }
+            if (anio == _anio)
+            {
+                if (mes >= _mes)
+                {
+                    return true;
+                }
+            }
+            ErrorForm.SetError(TxtFechaVencimiento, "Fecha de vencimiento Vencida");
+
             return false;
         }
 
